@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/static/styles/home.css">
+    <script src="/static/js/site.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cause:wght@100..900&family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main_body">
+        <div class="navbar">
+            <h6 onclick="ViewScroll('experience')">Experience</h6>
+            <h6 onclick="ViewScroll('project')">Portfolio</h6>
+            <h6><a href="https://github.com/jadhavumesh93" target="_blank"">Github</a></h6>
+            <h6><a href="https://www.linkedin.com/in/umesh-atm-jadhav/" target="_blank">LinkedIn</a></h6>
+        </div>
+        <div class="top_div_1">
+            <div class="second_div">
+                <h1>
+                    Hello, I'm Umesh Jadhav
+                </h1>
+                <p>
+                    I am a Software Developer with 2 years of Full-Stack Development experience <span class="big">Actively looking for Opportunities</span> in AI domain. I have recently completed M.S. in C.S(Interactive Intelligence) from Georgia Institute of Technology, USA; focusing on Deep Learning and NLP.
+                </p>
+                <!--<div class="social_media">
+                    <a href="#"><img src="/static/images/github.png" width="35" height="35"/></a>
+                    <a href="#"><img src="/static/images/linkedin.png" width="35" height="35"/></a>
+                </div>-->
+                <div class="skills">
+                    <h4>Machine Learning</h4>
+                    <h4>Data Analysis</h4>
+                    <h4>NLP</h4>
+                    <h4>Azure</h4>
+                    <h4>Python</h4>
+                    <h4>C#</h4>
+                    <h4>SQL Server</h4>
+                    <h4>FastAPI</h4>
+                    <h4>Flask</h4>
+                    <h4>MLFlow</h4>
+                    <h4>Docker</h4>
+                    
+                </div>
+                <!--<div class="work_buttons">
+                    <button onclick="ViewScroll('experience')">Experience</button>
+                    <button onclick="ViewScroll('project')">My Work</button>
+                </div>-->
+            </div>
+            <div class="second_div">
+                <div class="profile">
+                    <img src="/static/images/ProfilePic.jpg" width="400" height="400" />
+                </div>
+                <div class="social_media">
+                    &#x1F4C4; <a target="_blank" href="/static/files/UmeshResumeML.pdf" style="width : 100%">My Resume</a>
+                </div>
+                <!--<div class="social_media">
+                    <a href="#"><img src="/static/images/github.png" width="35" height="35"/></a>
+                    <a href="#"><img src="/static/images/linkedin.png" width="35" height="35"/></a>
+                </div>-->
+            </div>
+        </div>
+        <div class="top_div_2" id="experience">
+            <div class="work_exp_title">
+                <h2>Work Experience</h2>
+            </div>
+            <div class="work_exp_desc">
+                <h3 style="margin : 0">Associate Software Engineer, IBM India Pvt Ltd</h3>
+                <p style="font-style: normal; font-size: smaller;">&#x1F4C5; May 2022 - May 2024 </p>
+                <p>ASP.NET Core, REST API, MS SQL Server, Entity Framework Core, Javascript, JQuery, Azure Blob Storage</p>
+                <ul>
+                    <li>Optimized transaction processing pipelines and reduced wallet recharge time by 60%</li>
+                    <li>Engineered document management systems using Azure Blob Storage and SQL Server, supporting VKYC onboarding for 500K+ customers</li>
+                    <li>Built real-time monitoring with data visualization using ASP.NET and jQuery, improving system response time by 75% through proactive issue detection</li>
+                    <li>Maintained and enhanced production web systems handling financial transactions, improving system reliability and customer retention by 25%</li>
+                    <li>Collaborated with cross-functional teams to participate in full SDLC and analyze requirements, implement scalable solutions and ensuring smooth functioning of the project</li>
+                </ul>
+            </div>
+        </div>
+        <div class="top_div_3" id="project">
+            <div class="project_header">
+                <h4 id="project1" class="header" onclick="setActive(this, 1);">Automated Loan Assessment using Explanable AI</h4>
+                <h4 class="header" onclick="setActive(this, 2);">Predicting S&P 500 Index using Ensemble Machine Learning </h4>
+                <h4 class="header" onclick="setActive(this, 3);"> POS - Comparative analysis of ML algorithms </h4>
+            </div>
+            <div class="project_showcase">
+                <video autoplay muted playsinline loop width="550" height="400">
+                    <source id="project_video" src="/static/videos/test.mp4" />
+                </video>
+                <div>
+                    <p id="tech_stack"></p><a id="project_url" href="#">Try it here</a>
+                    <ul id="project_desc"></ul>
+                </div>
+            </div>
+        </div>
+        <!--<div class="top_div_4" id="qualification">
+            <div class="quals">
+                <h2>Masters in Computer Science (OMSCS)</h2>
+                <p>&#128205; Georgia Institute of Technology, USA</p>
+                <p>&#x1F4C5; Jan 2022 - Jul 2025</p>
+            </div>
+            <div class="quals">
+                <h2>Bachelor's of Engineering (IT)</h2>
+                <p>&#128205; University of Mumbai, India</p>
+                <p>&#x1F4C5; Jun 2015 - Oct 2020</p>
+            </div>
+        </div>-->
+    </div>
+</body>

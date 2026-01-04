@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cause', 'Arvo', 'Merriweather', 'Cinzel', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+h1{
+    font-size : 70px;
+    text-align: left;
+    color : darkgreen;
+}
+
+p{
+    font-size : 18px;
+    /*font-style: italic;*/
+}
+
+button{
+    background-color: #fff0f3;
+    color : #590d22;
+    font-size: large;
+    width : fit-content;
+    padding : 2%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+ul{
+    margin: 0;
+    line-height: 2;
+}
+
+li{
+    font-size: 15px;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 40px;
+    background-color: darkgreen;
+    color : white;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 10px 8px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color : white;
+    
+}
+
+.navbar h6:hover{
+    transform: scale(1.3);
+}
+
+.navbar h6{
+    font-size: 16px;
+    margin: 1.5% 2% 1.5% 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.top_div_1{
+    /*background-color: #590d22;*/
+    background-color: rgba(75, 245, 39, 0.2);
+    color : black;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin : 0%;
+    border : 2px solid darkgreen;
+}
+
+.top_div_1 p{
+    line-height: 1.6;
+}
+
+.big{
+    font-size: 1.6em;
+    vertical-align: middle;
+}
+
+.second_div{
+    display : flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    row-gap: 3%;
+    padding : 2%;
+    /*width : 100%;*/
+    /*border : 1px solid white;*/
+}
+
+.social_media{
+    background-color: white;
+    /*width: 35%;*/
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    /*column-gap: 5%;*/
+    padding: 4%;
+    margin-top: -10%;
+    border-radius: 15px;
+}
+
+.social_media a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.work_buttons{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    width : 100%;
+    column-gap: 10%;
+    margin : 5% 0 0 0;
+    /*border: 1px dashed white;*/
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3%;
+    width : 100%;
+    background-color: white;
+    margin : 3% 0 0 0;
+    padding: 1% 2% 1% 2%;
+    border-radius: 15px;
+}
+
+.skills h4{
+    border : 1px solid white;
+    background-color: rgba(61, 184, 35, 0.99);
+    color : white;
+    padding : 1.8%;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.main_body{
+    display : flex;
+    flex-direction: column;
+}
+
+.top_div_2{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    background-color: darkgreen;
+    padding : 0%;
+    margin : 2%;
+    border : 2px solid darkgreen;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.top_div_2 h2{
+    font-size: 50px;
+    width : 100%;
+    height : 100%;
+    text-align: center;
+    /*border: 1px solid #590d22;*/
+}
+
+.work_exp_desc{
+    /*border-left: 2px solid red; */
+    padding : 4%;
+    border: 3px dashed white;
+    background-color: white;
+}
+
+.work_exp_title{
+    background-color: darkgreen;
+    color : white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    padding: 6%;
+}
+
+.top_div_2 h3{
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+.top_div_3{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 2%;
+}
+
+.project_header{
+    display : flex;
+    flex-direction: row;
+    width : 100%;
+    height: fit-content;
+    margin : 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+    /*border: 2px solid darkgreen;*/
+}
+
+.project_header h4{
+    border : 1px dotted darkgreen;
+    margin : 1%;
+    border-radius : 8px;
+}
+
+.header{
+    text-align: center;
+    border: 1px solid white;
+    width : 100%;
+    padding: 3% 0 3% 0;
+    margin: 0;
+    font-size: large;
+    align-items: center;
+    align-content: center;
+    transition: transform 0.3s ease;
+}
+
+.header:hover{
+    transform: scale(1.05);
+    background-color: darkgreen;
+    color : white;
+}
+
+.project_showcase{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    column-gap: 5%;
+    padding: 0 5% 0 5%;
+    margin : 1% 0 0 0;
+    background-color: rgba(75, 245, 39, 0.35);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /*border : 5px solid red;*/
+}
+
+.project_active_tab{
+    background-color: darkgreen;
+    color: white;
+}
+
+.top_div_4{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border : 2px solid darkgreen;
+    margin : auto;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.quals{
+    display : flex;
+    flex-direction: column;
+    background-color: rgba(75, 245, 39, 0.35);
+    /*padding : 1%;
+    margin: 1%;*/
+    border: 2px solid darkgreen;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.profile{
+    display : flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: darkgreen;
+    padding : 1%;
+    border-radius: 10px;
+}
