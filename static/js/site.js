@@ -25,13 +25,26 @@ function project_desc(project_id = 1){
     })
     .then(response => response.json())
     .then(data => {
-        //console.log("Data = ", data)
+        console.log("Data = ", data)
         document.getElementById("project_video").src = data.video_url
         document.getElementById("tech_stack").textContent = data.tech_stack
         document.getElementById("tech_stack").style.fontStyle = "italic"
         document.getElementById("project_url").href = data.project_url
+        const video = document.getElementById("video");
+        const img = document.getElementById("image")
+        img.style.margin = "5%";
+        if(project_id != 3){
+            document.getElementById("project_url").textContent = "Try here"
+            video.style.display = "block"
+            img.style.display = "none";
+            video.load();
+        }
+
         if(project_id == 3){
             document.getElementById("project_url").textContent = "Complete Analysis here"
+            img.src = data.video_url;
+            img.style.display = "block";
+            video.style.display = "none";
         }
         const ul = document.getElementById("project_desc")
         ul.innerHTML = "";
